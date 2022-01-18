@@ -8,7 +8,7 @@
     "dev": "webpack --mode=development",
     "build": "webpack --mode=production",
     "start": "nodemon src/index.js localhost ",
-    "serve": "nodemon src/app.js",
+    "serve": "nodemon src/app.js -e js,hbs",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "deploy": "gh-pages -d dist",
@@ -71,6 +71,7 @@
   },
   "dependencies": {
     "express": "^4.17.2",
+    "hbs": "^4.2.0",
     "postman-request": "^2.88.1-postman.31",
     "ramda": "^0.27.1",
     "yargs": "^17.3.1"
